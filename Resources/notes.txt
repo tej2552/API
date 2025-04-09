@@ -1,0 +1,42 @@
+SKIP
+
+Say for example in this framework, we have 5 .mjs files with 5 different tests in the test folder.
+We want execute all the tests except the delete test, so to achieve this, if we add skip() in the it block, it will 
+be skipped.
+
+
+Example - 
+
+describe("Put Request", async () => {
+    it.skip("should be able to delete data", async () => {
+        ****---------
+
+        Body of the function
+
+        -----------****
+    })
+})
+
+____________________________________________________________________________________________________________________________
+
+ONLY 
+
+Say for example in this framework, we have 5 .mjs files with 5 different tests in the test folder.
+We want execute only the delete test, so to achieve this, if we add only() in the it block, it will 
+be the only test executed.
+
+
+Example - 
+
+describe("Put Request", async () => {
+    it.only("should be able to delete data", async () => {
+        ****---------
+
+        Body of the function
+
+        -----------****
+    })
+})
+
+
+____________________________________________________________________________________________________________________________
