@@ -1,0 +1,2 @@
+1. run the test using mocha - npx mocha <filepath>
+2. To get the mochawesome report - npx mocha <filepath> --reporter mochawesome

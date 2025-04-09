@@ -4,7 +4,9 @@
   "description": "Learning API Automation Testing",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rimraf mochawesome-report/",
+    "test": "npx mocha test/getRequest.mjs",
+    "testWithReport": "npx mocha test/getRequest.mjs --reporter mochawesome"
   },
   "keywords": [
     "api",
